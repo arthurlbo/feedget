@@ -8,8 +8,7 @@
         "preview": "vite preview --open --host",
         "format": "prettier -uw --ignore-path .gitignore .",
         "run-tsc": "tsc",
-        "run-eslint": "eslint --cache --fix --ignore-path .gitignore --ext .ts,.tsx src",
-        "lint": "run-p run-eslint"
+        "lint": "eslint --cache --fix --ignore-path .gitignore --ext .ts,.tsx src"
     },
     "dependencies": {
         "@headlessui/react": "^1.7.15",
