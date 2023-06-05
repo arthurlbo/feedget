@@ -87,6 +87,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 📱 Mobile version
 
-[Feedback Widget App](https://github.com/arthurlbo/feedback-widget-app)
+[Feedget App](https://github.com/arthurlbo/feedget/tree/main/mobile)
+
+## 🚀 Api
+
+[Feedget Api](https://github.com/arthurlbo/feedget/tree/main/server)
 
 <p align="center">Made with 🤍 by Arthur</p>
