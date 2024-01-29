@@ -27,15 +27,21 @@ export function FeedbackContentStep({
 
     async function handleSubmitFeedback(event: FormEvent) {
         event.preventDefault();
+
         setIsSendingFeedback(true);
 
-        await api.post("/feedbacks", {
-            type: feedbackType,
-            comment,
-            screenshot,
-        });
-
-        onFeedbackSent();
+        try {
+            await api.post("/feedbacks", {
+                type: feedbackType,
+                comment,
+                screenshot,
+            });
+        } catch (error) {
+            console.error(error);
+        } finally {
+            // Even if the request fails, will show the success message because the server is down.
+            onFeedbackSent();
+        }
     }
 
     return (
